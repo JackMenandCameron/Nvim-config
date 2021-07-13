@@ -25,7 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Pretty Colors
     Plug 'tjdevries/colorbuddy.vim'
     Plug 'tjdevries/gruvbuddy.nvim'
-    " Rtags
+    " Rtags - commented out on mac
     Plug 'lyuts/vim-rtags'
     " Airline
     Plug 'bling/vim-airline'
