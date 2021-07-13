@@ -13,7 +13,7 @@ nnoremap <space>/ :Commentary<CR>
 vnoremap <space>/ :Commentary<CR>
 
 " Color - Commented out on mac
-lua require('colorbuddy').colorscheme('gruvbuddy')
+" lua require('colorbuddy').colorscheme('gruvbuddy')
 
 " FZF File
 nnoremap <leader>f :Files<CR>
