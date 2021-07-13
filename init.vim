@@ -12,7 +12,7 @@ source ~/.vimrc
 nnoremap <space>/ :Commentary<CR>
 vnoremap <space>/ :Commentary<CR>
 
-" Color
+" Color - Commented out on mac
 lua require('colorbuddy').colorscheme('gruvbuddy')
 
 " FZF File
