@@ -29,4 +29,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'bling/vim-airline'
     " Jumping around easier
     Plug 'easymotion/vim-easymotion'
+    " Plug
+    Plug 'sindrets/diffview.nvim'
+
 call plug#end()
