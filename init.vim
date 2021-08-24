@@ -39,5 +39,14 @@ nmap <Leader>l <Plug>(easymotion-overwin-line)
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
 
-" DiffviewOpen
-map <Leader>d :DiffviewOpen<CR>
+" Diffview
+map <Leader>do :DiffviewOpen<CR>
+map <Leader>dc :DiffviewClose<CR>
+map <Leader>dt :DiffviewToggleFiles<CR>
+
+" Spell check
+map <Leader>s :setlocal spell<CR>
+map <Leader>n :setlocal nospell<CR>
+
+" Surround
+lua require"surround".setup{}
