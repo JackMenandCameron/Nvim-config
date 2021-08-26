@@ -16,7 +16,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Commenting `gc` for commenting
     Plug 'tpope/vim-commentary'
     " Surrounding
-    Plug 'tpope/vim-surround'
+    " Plug 'tpope/vim-surround'
+    Plug 'blackCauldron7/surround.nvim'
     " Git stuff
     Plug 'tpope/vim-fugitive'
     " Fuzy Finder
@@ -29,4 +30,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'bling/vim-airline'
     " Jumping around easier
     Plug 'easymotion/vim-easymotion'
+    " Plug
+    Plug 'sindrets/diffview.nvim'
+    "Conquer of Completion
+    " Plug 'neoclide/coc.nvim'
+
 call plug#end()
