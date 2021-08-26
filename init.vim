@@ -17,6 +17,10 @@ lua require('colorbuddy').colorscheme('gruvbuddy')
 
 " FZF File
 nnoremap <leader>f :Files<CR>
+nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>r :Rg 
+nnoremap <leader>l :Lines<CR>
+nnoremap <leader>L :BLines<CR>
 
 " NerdTree
 nnoremap <leader>t :NERDTreeToggle<CR>
@@ -32,12 +36,15 @@ map  <Leader>/ <Plug>(easymotion-overwin-f2)
 nmap s <Plug>(easymotion-overwin-f)
 
 " Move to line
-map <Leader>l <Plug>(easymotion-bd-jk)
-nmap <Leader>l <Plug>(easymotion-overwin-line)
+" map <Leader>l <Plug>(easymotion-bd-jk)
+" nmap <Leader>l <Plug>(easymotion-overwin-line)
 
 " Move to word
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+" Fugitive
+map <Leader>c :Commits<CR>
 
 " Diffview
 map <Leader>do :DiffviewOpen<CR>
@@ -49,4 +56,4 @@ map <Leader>s :setlocal spell<CR>
 map <Leader>n :setlocal nospell<CR>
 
 " Surround
-lua require"surround".setup{}
+" lua require"surround".setup{}

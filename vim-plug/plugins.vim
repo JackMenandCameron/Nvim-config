@@ -17,10 +17,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-commentary'
     " Surrounding
     " Plug 'tpope/vim-surround'
-    Plug 'blackCauldron7/surround.nvim'
+    " Plug 'blackCauldron7/surround.nvim'
     " Git stuff
     Plug 'tpope/vim-fugitive'
-    " Fuzy Finder
+    " Fuzy Finder Look at repository for more install info (bat)
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
     " Pretty Colors
