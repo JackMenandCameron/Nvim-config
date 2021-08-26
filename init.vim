@@ -57,3 +57,10 @@ map <Leader>n :setlocal nospell<CR>
 
 " Surround
 " lua require"surround".setup{}
+
+" Make help open in its own tab'
+cabbrev h tab help
+cabbrev G tab G
+
+" Have terminal open with T
+map <Leader>T :below new<CR>:terminal<CR>:resize 20<CR>
