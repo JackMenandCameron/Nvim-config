@@ -64,3 +64,6 @@ cabbrev G tab G
 
 " Have terminal open with T
 map <Leader>T :below new<CR>:terminal<CR>:resize 20<CR>
+
+" Go fmt the current file
+map <Leader>gf :! go fmt %<CR>
