@@ -1,3 +1,4 @@
+
 let mapleader = ";"
 source $HOME/.config/nvim/vim-plug/plugins.vim
 set mouse=a
@@ -7,6 +8,11 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.vimrc
 
+" Allow for both a lua and vim config
+lua require('config')
+
+" Allow for COC commands
+source ~/.config/nvim/coc.vim
 
 " Coments
 nnoremap <space>/ :Commentary<CR>
@@ -63,7 +69,12 @@ cabbrev h tab help
 cabbrev G tab G
 
 " Have terminal open with T
-map <Leader>T :below new<CR>:terminal<CR>:resize 20<CR>
+map <Leader>T :below new<CR>:terminal<CR>:resize 10<CR>
 
 " Go fmt the current file
 map <Leader>gf :! go fmt %<CR>
+
+
+" Focus on one window by creating temp tab
+map <Leader>z :tabe %<CR>
+

@@ -33,6 +33,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug
     Plug 'sindrets/diffview.nvim'
     "Conquer of Completion
-    " Plug 'neoclide/coc.nvim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Treesitter
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 call plug#end()
