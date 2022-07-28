@@ -1,7 +1,7 @@
 -- Used to initialize the treesitter
 -- Helpful info included in the github
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "cpp", "c", "lua", "rust" },
+  ensure_installed = { "cpp", "c", "lua", "rust", "javascript" },
   sync_install = false,
   highlight = {
     enable = true,

@@ -74,6 +74,8 @@ map <Leader>T :below new<CR>:terminal<CR>:resize 10<CR>
 " Go fmt the current file
 map <Leader>gf :! go fmt %<CR>
 
+" Coc format
+map <Leader>F :CocCommand editor.action.formatDocument<CR>
 
 " Focus on one window by creating temp tab
 map <Leader>z :tabe %<CR>
