@@ -80,3 +80,8 @@ map <Leader>F :CocCommand editor.action.formatDocument<CR>
 " Focus on one window by creating temp tab
 map <Leader>z :tabe %<CR>
 
+" Save Folds
+map <Leader>[ :mkview<CR>
+" Load Folds
+map <Leader>] :loadview<CR>
+
