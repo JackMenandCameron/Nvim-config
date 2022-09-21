@@ -85,3 +85,44 @@ map <Leader>[ :mkview<CR>
 " Load Folds
 map <Leader>] :loadview<CR>
 
+" Crusoe stuff
+map <Leader>CC 
+    \
+    \:TabooRename Agent<CR>:terminal<CR>icd agent<CR><C-L>make run<CR><C-\><C-n>
+    \
+    \:TabooOpen MDU<CR>:terminal<CR>icd mdu-coordinator<CR><C-L>make run<CR><C-\><C-n>
+    \
+    \:TabooOpen RC<CR>:terminal<CR>icd region-coordinator/dev<CR>
+    \docker-compose up<CR><C-\><C-n>:sleep 1500m<CR>
+    \:sv <CR>:terminal <CR> icd region-coordinator<CR><C-L>make run<CR><C-\><C-n>
+    \:sv <CR>:terminal <CR> icd region-coordinator<CR><C-L>make run-synchronizer<CR><C-\><C-n>
+    \
+    \:TabooOpen Entity<CR>:terminal<CR>icd entity/dev<CR>
+    \docker-compose up<CR><C-\><C-n> :sleep 1500m<CR>
+    \:sv <CR>:terminal <CR> icd entity<CR><C-L>make run <CR><C-\><C-n>
+    \
+    \:TabooOpen Billing<CR>:terminal<CR>icd billing/dev<CR>
+    \docker-compose up<CR><C-\><C-n> :sleep 1500m<CR>
+    \:sv <CR>:terminal <CR> icd billing<CR><C-L>make run<CR><C-\><C-n>
+    \
+    \:TabooOpen Rest<CR>:terminal<CR>icd rest-gateway/dev<CR>
+    \docker-compose up<CR><C-\><C-n> :sleep 1500m<CR>
+    \:sv <CR>:terminal <CR> icd rest-gateway<CR><C-L>make run<CR><C-\><C-n>
+    \
+    \:TabooOpen Backend<CR>:terminal<CR>icd portal-backend<CR><C-L>make run<CR><C-\><C-n>
+    \
+    \:TabooOpen AdminGate<CR>:terminal<CR>icd admin-gateway<CR><C-L>make run<CR><C-\><C-n>
+    \
+    \:TabooOpen Portal<CR>:terminal<CR>icd portal<CR><C-L>yarn dev<CR><C-\><C-n>
+    \:sv <CR>:terminal <CR> icd portal-admin<CR><C-L>yarn dev<CR><C-\><C-n>
+    \
+    \:TabooOpen Notes<CR>:e Notes/startup.md<CR>
+
+" Ignore case when searching
+set ignorecase
+
+" ZenMode
+map <Leader>Z :ZenMode<CR>
+
+" Source nvim
+map <Leader>S :source $MYVIMRC<CR>

@@ -1,4 +1,8 @@
 {
   "languageserver": {
-  }
+  },
+  "suggest":{
+    "noselect": true,
+    "enablePreselect": false,
+  },
 }

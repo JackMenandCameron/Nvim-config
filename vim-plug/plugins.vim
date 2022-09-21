@@ -31,10 +31,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Jumping around easier
     Plug 'easymotion/vim-easymotion'
     " Plug
+    Plug 'nvim-lua/plenary.nvim'
+    " Diff View
     Plug 'sindrets/diffview.nvim'
     "Conquer of Completion
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    " Treesitter
+    " Treesitter (has some in lua too)
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    " Rename tabs
+    Plug 'gcmt/taboo.vim'
+    " Zen Mode (has some in lua too)
+    Plug 'folke/zen-mode.nvim'
 
 call plug#end()
