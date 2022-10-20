@@ -5,4 +5,5 @@
     "noselect": true,
     "enablePreselect": false,
   },
+  "coc.preferences.formatOnSaveFiletypes": ["go"],
 }

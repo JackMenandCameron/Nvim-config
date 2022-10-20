@@ -55,6 +55,8 @@ map <Leader>c :Commits<CR>
 " Diffview
 map <Leader>do :DiffviewOpen<CR>
 map <Leader>dc :DiffviewClose<CR>
+map <Leader>dm :DiffviewOpen origin/master<CR>
+map <Leader>dh :DiffviewFileHistory<CR>
 map <Leader>dt :DiffviewToggleFiles<CR>
 
 " Spell check
@@ -126,3 +128,6 @@ map <Leader>Z :ZenMode<CR>
 
 " Source nvim
 map <Leader>S :source $MYVIMRC<CR>
+
+" Make Current File 80 chars long
+map <Leader>8 :%! fmt -w 80<CR>
