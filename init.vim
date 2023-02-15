@@ -56,6 +56,7 @@ map <Leader>c :Commits<CR>
 map <Leader>do :DiffviewOpen<CR>
 map <Leader>dc :DiffviewClose<CR>
 map <Leader>dm :DiffviewOpen origin/master<CR>
+map <Leader>dM :DiffviewOpen origin/main<CR>
 map <Leader>dh :DiffviewFileHistory<CR>
 map <Leader>dt :DiffviewToggleFiles<CR>
 
@@ -131,3 +132,6 @@ map <Leader>S :source $MYVIMRC<CR>
 
 " Make Current File 80 chars long
 map <Leader>8 :%! fmt -w 80<CR>
+
+" Copy to clipboard
+map <Leader>y "*y
