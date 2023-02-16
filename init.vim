@@ -19,7 +19,7 @@ nnoremap <space>/ :Commentary<CR>
 vnoremap <space>/ :Commentary<CR>
 
 " Color - Commented out on mac
-" lua require('colorbuddy').colorscheme('gruvbuddy')
+lua require('colorbuddy').colorscheme('gruvbuddy')
 
 " FZF File
 nnoremap <leader>f :Files<CR>
@@ -135,3 +135,14 @@ map <Leader>8 :%! fmt -w 80<CR>
 
 " Copy to clipboard
 map <Leader>y "*y
+
+" desert colorscheme
+colorscheme nordic
+let g:airline_theme='base16_nord'
+
+" Sidescroll 
+map <C-L> 20zl " Scroll 20 characters to the right
+map <C-H> 20zh " Scroll 20 characters to the left
+
+" DB jump to foreign key
+autocmd FileType dbout nmap <buffer> f <Plug>(DBUI_JumpToForeignKey)

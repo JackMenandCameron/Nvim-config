@@ -28,6 +28,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tjdevries/gruvbuddy.nvim'
     " Airline
     Plug 'bling/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
     " Jumping around easier
     Plug 'easymotion/vim-easymotion'
     " Plug
@@ -42,5 +43,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'gcmt/taboo.vim'
     " Zen Mode (has some in lua too)
     Plug 'folke/zen-mode.nvim'
+    " Outline for code
+    Plug 'liuchengxu/vista.vim'
+    " Nicer Notifications
+    Plug 'rcarriga/nvim-notify'
+    " Help with the menu
+    Plug 'gelguy/wilder.nvim'
+    " Nordic theme
+    Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }
+    " Database helpers
+    Plug 'tpope/vim-dadbod'
+    Plug 'hrsh7th/nvim-cmp'
+    Plug 'kristijanhusak/vim-dadbod-ui'
+    Plug 'kristijanhusak/vim-dadbod-completion'
+
 
 call plug#end()
