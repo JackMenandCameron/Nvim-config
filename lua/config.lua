@@ -34,3 +34,50 @@ wilder.set_option('renderer', wilder.popupmenu_renderer(
 
 -- Gruv theme
 require('colorbuddy').colorscheme('gruvbuddy')
+
+
+-- LSP
+require('lspconfig').gopls.setup{}
+
+
+-- Outline
+require("symbols-outline").setup()
+vim.api.nvim_set_keymap('n', '<leader>o', ':SymbolsOutline<CR>', { noremap = true, silent = true })
+
+
+-- GOLANG
+require('go').setup()
+vim.api.nvim_set_keymap('n', '<leader>gs', ':GoFillStruct<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gS', ':GoTest<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gt', ':GoTestSum<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gF', ':GoTestFunc<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gc', ':GoCoverage<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gR', ':GoCoverage -R<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gT', ':GoAddTag<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gi', ':GoImpl<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gv', ':GoVet ./...<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gm', ':GoModTidy<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gr', ':GoGenReturn<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>ga', ':GoAlt<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gD', ':GoDebug<CR>', { noremap = true, silent = true })
+
+-- Run gofmt + goimport on save
+local format_sync_grp = vim.api.nvim_create_augroup("GoImport", {})
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*.go",
+  callback = function()
+   require('go.format').goimport()
+  end,
+  group = format_sync_grp,
+})
+
+
+-- DAP
+require("neodev").setup({
+  library = { plugins = { "nvim-dap-ui" }, types = true },
+  ...
+})
+vim.api.nvim_set_keymap('n', '<leader>Db', ':DapToggleBreakpoint<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>Ds', ':DapStop<CR>', { noremap = true, silent = true })
+
+require("nvim-dap-virtual-text").setup()

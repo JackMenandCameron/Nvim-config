@@ -56,6 +56,20 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'hrsh7th/nvim-cmp'
     Plug 'kristijanhusak/vim-dadbod-ui'
     Plug 'kristijanhusak/vim-dadbod-completion'
+    " LSP 
+    Plug 'neovim/nvim-lspconfig'
+    " Outline
+    Plug 'simrat39/symbols-outline.nvim'
+    Plug 'nvim-treesitter/nvim-treesitter'
+    " Golang
+    Plug 'ray-x/go.nvim'
+    Plug 'ray-x/guihua.lua'
+    " Debugger
+    Plug 'mfussenegger/nvim-dap'
+    Plug 'rcarriga/nvim-dap-ui'
+    Plug 'folke/neodev.nvim'
+    Plug 'theHamsta/nvim-dap-virtual-text'
+
 
 
 call plug#end()

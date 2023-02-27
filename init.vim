@@ -144,5 +144,5 @@ let g:airline_theme='base16_nord'
 map <C-L> 20zl " Scroll 20 characters to the right
 map <C-H> 20zh " Scroll 20 characters to the left
 
-" DB jump to foreign key
+" DB jump to foreign key DOES NOT WORK ATM
 autocmd FileType dbout nmap <buffer> f <Plug>(DBUI_JumpToForeignKey)
